@@ -6,6 +6,8 @@ import { base_url } from '@/Base_Url';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import axios from 'axios';
+import Skeleton from '@mui/material/Skeleton';
+import Stack from '@mui/material/Stack';
 function Newfeet() {
     const token = localStorage.getItem('token');
     const [dataNewFeet, setNewfeet] = useState([]);
