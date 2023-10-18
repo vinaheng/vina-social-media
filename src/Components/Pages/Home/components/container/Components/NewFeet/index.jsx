@@ -2,7 +2,6 @@ import moment from 'moment/moment';
 import { MdMoreHoriz } from 'react-icons/md';
 import { AiTwotoneLike, AiOutlineComment } from 'react-icons/ai';
 import { FaShare } from 'react-icons/fa';
-import Loading from '@/Components/Loading/LoadingNewfeet';
 import { base_url } from '@/Base_Url';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
