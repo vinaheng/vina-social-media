@@ -129,7 +129,47 @@ function Newfeet() {
                 [...Array(4).keys()].map((i) => {
                     return (
                         <div key={i}>
-                            <Loading />
+                           <div className="bg-white dark:bg-slate-800 p-5 rounded-lg mt-2 flex-1">
+            <Stack spacing={1} animation="wave">
+                <div className="flex items-center justify-between">
+                    <div className="flex items-center">
+                        <Skeleton variant="circular" width={40} height={40} />
+                        <div className="ml-2">
+                            <Skeleton variant="rectangular" width={80} height={10} />
+                            <Skeleton className="mt-2" variant="rectangular" width={40} height={10} />
+                        </div>
+                    </div>
+                    <Skeleton variant="rounded" width={20} height={20} />
+                </div>
+                <Skeleton animation="wave" variant="rounded" className="w-full" height={40} />
+                <Skeleton animation="wave" variant="rounded" className="w-full" height={300} />
+                <div className="flex justify-between">
+                    <div className="flex gap-2 items-center">
+                        <Skeleton variant="rectangular" width={15} height={15} />
+                        <Skeleton variant="rectangular" width={80} height={10} />
+                    </div>
+                    <div className="flex gap-2 items-center">
+                        <Skeleton variant="rectangular" width={80} height={10} />
+                        <Skeleton variant="rectangular" width={80} height={10} />
+                    </div>
+                </div>
+                <Skeleton variant="rounded" className="w-full" height={5} />
+                <div className="flex justify-around pt-4">
+                    <div className="flex gap-2 items-center">
+                        <Skeleton variant="rectangular" width={15} height={15} />
+                        <Skeleton variant="rectangular" width={80} height={10} />
+                    </div>
+                    <div className="flex gap-2 items-center">
+                        <Skeleton variant="rectangular" width={15} height={15} />
+                        <Skeleton variant="rectangular" width={80} height={10} />
+                    </div>
+                    <div className="flex gap-2 items-center">
+                        <Skeleton variant="rectangular" width={15} height={15} />
+                        <Skeleton variant="rectangular" width={80} height={10} />
+                    </div>
+                </div>
+            </Stack>
+        </div>
                         </div>
                     );
                 })}
