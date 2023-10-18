@@ -5,8 +5,6 @@ function container() {
         <div>
             <OnYourMind />
             <NewFeet />
-            <NewFeet />
-            <NewFeet /> <NewFeet />
         </div>
     );
 }

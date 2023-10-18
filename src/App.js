@@ -28,7 +28,6 @@ function App() {
             Authorization: 'Bearer ' + token,
         },
     });
-
     async function getDataUser() {
         setLoading(true);
         await api
@@ -43,9 +42,9 @@ function App() {
             });
         setLoading(false);
     }
-    useEffect(async () => {
-        await getDataUser();
-    }, [token, tokenData, checkLogOut]);
+    useEffect(() => {
+        getDataUser();
+    }, [tokenData, checkLogOut]);
     return (
         <div>
             {!loading ? (

@@ -1,12 +1,18 @@
-import profile from '@/assets/logo_user.jpg';
 import { FaImage } from 'react-icons/fa6';
 import { RiLiveFill } from 'react-icons/ri';
 import { BsEmojiSunglassesFill } from 'react-icons/bs';
+import { useSelector } from 'react-redux';
+import { base_url } from '@/Base_Url';
 function OnYourMind() {
+    const userData = useSelector((state) => state.User.UserData);
     return (
         <div className="bg-white dark:bg-slate-800 p-5 rounded-lg">
             <div className="flex items-center">
-                <img src={profile} alt="profile" className="h-10 w-10 rounded-full object-cover" />
+                <img
+                    src={base_url + '/' + userData.profile_picture_path}
+                    alt="profile"
+                    className="h-10 w-10 rounded-full object-cover"
+                />
                 <input
                     type="text"
                     placeholder="What on your mind ?"
